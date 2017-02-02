@@ -12,7 +12,7 @@ Checks total sum per cell per table (sum-b, sum-c, sum-t), total number of genes
 Output: root-QC.txt (table: rows: parameters desribed above; columns: cells)
 
 Data visualization: I have preference for gnuplot. <br/>
-To produce violing plots of the data for a given column go into gnuplot terminal and type:
+To produce violing plots of the data for a given column go into gnuplot terminal and type (more info here: http://gnuplot.sourceforge.net/demo_cvs/violinplot.html):
 
 col = 2  <br/>
 set table $violin  <br/>
