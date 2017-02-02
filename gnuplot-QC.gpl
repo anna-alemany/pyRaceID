@@ -1,0 +1,9 @@
+file=@ARG1
+col=@ARG2
+
+set table $violin 
+pl file us col:(1) smooth kdensity 
+unset table 
+pl $violin us 2:1 w l lw 2 lc 1 noti
+repl $violin us (-$2):1 w l lw 2 lc 1 noti 
+repl file us (0):col with boxplot ti col 
