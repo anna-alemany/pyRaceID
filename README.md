@@ -14,13 +14,13 @@ Output: root-QC.txt (table: rows: parameters desribed above; columns: cells)
 Data visualization: I have preference for gnuplot. <br/>
 To produce violing plots of the data for a given column go into gnuplot terminal and type:
 
-col = 2
-set table $violin
-pl 'root-QC.txt' us col:(1) smooth kdensity
-unset table
-pl $violin us col:1 w l lw 2 lc 1
-repl $violin us (-$col):1 w l lw 2 lc 1
-repl 'root-QC.txt' us (0):2:(.5) with boxplot
+col = 2  <br/>
+set table $violin  <br/>
+pl 'root-QC.txt' us col:(1) smooth kdensity  <br/>
+unset table  <br/>
+pl $violin us 2:1 w l lw 2 lc 1  noti<br/>
+repl $violin us (-$2):1 w l lw 2 lc 1 noti <br/>
+repl 'root-QC.txt' us (0):col:(.5) with boxplot ti col  <br/>
 
 
 
