@@ -43,7 +43,7 @@ if not os.path.isfile(inputpickle):
     sys.exit('ERR001: input pickle not found')
 
 if outputfile == 'None':
-    outputfile = inputpickle[:-7] + 'filteredCells'
+    outputfile = inputpickle[:-7] 
 
 pdata = pickle.load(open(inputpickle))
 
